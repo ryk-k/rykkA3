@@ -1,28 +1,24 @@
 app-footer {
-    grid-area: footer;
-    position: absolute;
-    bottom: 0;
-    height: 30px;
-    padding-top: 10px;
-    width: 100%;
-    text-align: center;
-  
-    color: aliceblue;
-    background-color: rgb(35, 78, 88);
-    border-top: 3px solid steelblue;
-    border-bottom: 3px solid steelblue;
-  }
-  app-header {
-      grid-area: footer;
-      position: absolute;
-      bottom: 1;
-      height: 30px;
-      padding-top: 10px;
-      width: 100%;
-      text-align: center;
-    
-      color: aliceblue;
-      background-color: rgb(35, 78, 88);
-      border-top: 3px solid steelblue;
-      border-bottom: 3px solid steelblue;
-    }
+  grid-area: footer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(35, 78, 88);
+  border-top: 3px solid steelblue;
+  border-bottom: 3px solid steelblue;
+
+}
+app-header {
+  grid-area: header;
+  position: absolute;
+  bottom: 1;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(35, 78, 88);
+  border-top: 3px solid steelblue;
+  border-bottom: 3px solid steelblue;
+
+}

@@ -4,5 +4,5 @@ export class Rykk{
     name!: string;
     email!: string;
     campus!: string;
-    assnmt!: string;
+    assmnt!: string;
 }

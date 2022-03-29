@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { RYKK } from 'src/assets/data/rykkData';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class FooterComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
+  rykk = RYKK;
 }
