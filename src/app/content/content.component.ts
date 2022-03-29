@@ -1,16 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MYCOURSES } from 'src/assets/data/myCourses';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class ContentComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
+  classes = MYCOURSES;
 }
