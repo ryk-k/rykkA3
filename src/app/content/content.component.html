@@ -6,7 +6,7 @@
       {{ c.code }}
     </button>
   </li>
-  <ul class="sectionB">
+  <ul *ngIf="c" class="sectionB">
     <li>Course title: {{ c.title }}</li>
     <li>Day of week: {{ c.day }}</li>
     <li>Professor name: {{ c.prof }}</li>
@@ -26,8 +26,8 @@
         {{ c.code }}
       </button>
     </td>
-    <td class="sectionB">{{ c.title }}</td>
-    <td class="sectionB">{{ c.day }}</td>
-    <td class="sectionB">{{ c.prof }}</td>
+    <td  *ngIf="selectedCourse" class="sectionB">{{ c.title }}</td>
+    <td  *ngIf="selectedCourse"  class="sectionB">{{c.day }}</td>
+    <td  *ngIf="selectedCourse"  class="sectionB">{{c.prof }}</td>
   </tr>
 </table>

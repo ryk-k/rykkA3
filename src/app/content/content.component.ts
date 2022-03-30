@@ -12,8 +12,13 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {}
   courses = MYCOURSES;
 
-// selectedClass?: courses;
- onSelect(  c:Course): void {
-//   this.selectedClass = c;
- }
+  selectedCourse?: Course;
+  
+ // displ: string [] = [];
+
+
+  onSelect(c: Course): void  {
+    this.selectedCourse = c;
+//   this.displ[] = !this.displ[];
+  }
 }
