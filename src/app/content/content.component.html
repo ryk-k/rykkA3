@@ -1,1 +1,33 @@
-<p>make a grid and display my classes in like a for loop maybe >>use the angular tutorial page thats open rn its perfect</p>
+<h2>My Classes</h2>
+
+<ul id="port" class="sectionA" *ngFor="let c of courses">
+  <li>
+    <button type="button" (click)="onSelect(c)">
+      {{ c.code }}
+    </button>
+  </li>
+  <ul class="sectionB">
+    <li>Course title: {{ c.title }}</li>
+    <li>Day of week: {{ c.day }}</li>
+    <li>Professor name: {{ c.prof }}</li>
+  </ul>
+</ul>
+
+<table id="land">
+  <tr>
+      <td>Course Code</td>
+      <td>Course Title</td>
+      <td>Day of week</td>
+      <td>Professor Name</td>
+  </tr>
+  <tr class="sectionA" *ngFor="let c of courses">
+    <td>
+      <button type="button" (click)="onSelect(c)">
+        {{ c.code }}
+      </button>
+    </td>
+    <td class="sectionB">{{ c.title }}</td>
+    <td class="sectionB">{{ c.day }}</td>
+    <td class="sectionB">{{ c.prof }}</td>
+  </tr>
+</table>

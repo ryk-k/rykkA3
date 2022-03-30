@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MYCOURSES } from 'src/assets/data/myCourses';
+import { Course } from '../courseInfo';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
@@ -9,5 +10,10 @@ export class ContentComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-  classes = MYCOURSES;
+  courses = MYCOURSES;
+
+// selectedClass?: courses;
+ onSelect(  c:Course): void {
+//   this.selectedClass = c;
+ }
 }

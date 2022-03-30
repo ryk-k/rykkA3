@@ -1,24 +1,105 @@
-app-footer {
-  grid-area: footer;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: aliceblue;
-  background-color: rgb(35, 78, 88);
-  border-top: 3px solid steelblue;
-  border-bottom: 3px solid steelblue;
+/*LANDSCAPE*/
+@media only screen and (min-width: 350px) /*and (orientation: landscape) */ {
+  app-header {
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(35, 78, 88);
+    border-top: 5px solid steelblue;
+    border-bottom: 5px solid steelblue;
+  }
+  app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(35, 78, 88);
+    border-top: 5px solid steelblue;
+    border-bottom: 5px solid steelblue;
+  }
 
+  h2 {
+    grid-area: top;
+    padding-top: 70px;
+  }
+  .gridcont {
+    display: grid;
+    grid-template-areas:
+      "top"
+      "sectionA"
+      "sectionB";
+  }
+
+  .sectionA {
+    grid-area: sectionA;
+  }
+
+  .sectionB {
+    grid-area: sectionB;
+  }
+  
+  /*in land the prot will dis*/
+  #port {
+    width: 1px;
+    height: 1px;
+    font-size: 0ch;
+    visibility: hidden;
+  }
+  #land{
+    visibility: visible;
+  }
 }
-app-header {
-  grid-area: header;
-  position: absolute;
-  bottom: 1;
-  width: 100%;
-  text-align: center;
-  color: aliceblue;
-  background-color: rgb(35, 78, 88);
-  border-top: 3px solid steelblue;
-  border-bottom: 3px solid steelblue;
 
+/* PORTRAIT */
+@media only screen and (max-width: 844px) /* and (orientation: portrait) */ {
+  /*in portrait the land will diss*/
+  #land {
+    width: 1px;
+    height: 1px;
+    font-size: 0ch;
+    visibility: hidden;
+  }
+  .gridcont {
+    display: grid;
+    grid-template-areas:
+      "top" "top"
+      "sectionA" "sectionB";
+  }
+
+  h2 {
+    grid-area: top;
+    padding-top: 100px;
+  }
+  .sectionA {
+    grid-area: sectionA;
+  }
+
+  .sectionB {
+    grid-area: sectionB;
+  }
+
+  app-header {
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(35, 78, 88);
+    border-top: 3px solid steelblue;
+    border-bottom: 3px solid steelblue;
+  }
+
+  app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(35, 78, 88);
+    border-top: 3px solid steelblue;
+    border-bottom: 3px solid steelblue;
+  }
 }
